@@ -1,105 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of an aspiring IT professional moving from healthcare into Information Technology.">
+  <title>Home | Your Name</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">MyPortfolio</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Your Name</a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- 1. Home Section -->
-  <section id="home" class="hero-section">
-    <div class="container">
-      <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
-      <p>A Web Developer passionate about building clean, performant applications.</p>
-      <a href="#projects" class="btn">View My Work</a>
-    </div>
-  </section>
+  <main>
 
-  <!-- 2. About Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a developer who loves solving complex problems and turning ideas into modern web applications. 
-        I enjoy working with front-end and back-end technologies to deliver seamless user experiences.
-      </p>
-    </div>
-  </section>
+    <section class="hero">
+      <p class="label">Aspiring IT professional</p>
+      <h1>Hi, I'm Your Name.</h1>
+      <p class="tagline">From patient care to problem solving.</p>
+      <p class="intro">Welcome to my portfolio. Here you can follow my path from healthcare into Information Technology, see the projects I'm building, and learn how my experience in documentation, teamwork, and attention to detail supports my future in tech.</p>
+      <a class="btn btn-solid" href="projects.html">View my projects</a>
+      <a class="btn btn-outline" href="contact.html">Contact me</a>
+    </section>
 
-  <!-- 3. Skills Section -->
-  <section id="skills" class="section bg-alt">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="grid-container">
+    <section class="section">
+      <h2>What I bring</h2>
+      <div class="grid">
         <div class="card">
-          <h3>HTML & CSS</h3>
-          <p>Semantic markup, responsive layouts, and modern CSS styling.</p>
+          <h3>Technical foundation</h3>
+          <p>Python, HTML, and CSS through hands-on projects at i.c.stars.</p>
         </div>
         <div class="card">
-          <h3>JavaScript</h3>
-          <p>ES6+, DOM manipulation, and modern web application logic.</p>
+          <h3>Attention to detail</h3>
+          <p>Accurate, confidential documentation in healthcare.</p>
         </div>
         <div class="card">
-          <h3>Git & GitHub</h3>
-          <p>Version control, branch management, and collaborative development.</p>
+          <h3>Teamwork and communication</h3>
+          <p>International teams, in English and German.</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 4. Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="grid-container">
-        <div class="card">
-          <h3>Project One</h3>
-          <p>A web application built using HTML, CSS, and JavaScript.</p>
-          <a href="#" class="project-link">View Repo &rarr;</a>
-        </div>
-        <div class="card">
-          <h3>Project Two</h3>
-          <p>An interactive dashboard showcasing API integration and data visualization.</p>
-          <a href="#" class="project-link">View Repo &rarr;</a>
-        </div>
+    <section class="glance">
+      <h2>At a glance</h2>
+      <div class="glance-grid">
+        <div><span>Currently</span>IT Intern at i.c.stars</div>
+        <div><span>Background</span>Nursing Assistant, Germany</div>
+        <div><span>Tools</span>Python, HTML, CSS, Microsoft Office</div>
+        <div><span>Languages</span>English, German, Balochi</div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 5. Contact Section -->
-  <section id="contact" class="section bg-alt">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Feel free to reach out for collaborations or project inquiries.</p>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section class="section">
+      <h2>Explore my portfolio</h2>
+      <div class="grid small">
+        <a class="card link-card" href="about.html"><strong>About →</strong><span>My story and skills</span></a>
+        <a class="card link-card" href="media.html"><strong>Media →</strong><span>Photos and certificates</span></a>
+        <a class="card link-card" href="resume.html"><strong>Resume →</strong><span>Experience and education</span></a>
+        <a class="card link-card" href="projects.html"><strong>Projects →</strong><span>What I've built</span></a>
+      </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2026 Your Name. All rights reserved.</p>
-  </footer>
+    <section class="closing">
+      <p>I'm open to IT opportunities and always happy to connect.</p>
+      <a class="btn btn-solid" href="contact.html">Contact me</a>
+    </section>
 
-  <script src="script.js"></script>
+  </main>
+
+  <footer>&copy; 2026 Your Name</footer>
+
 </body>
 </html>
