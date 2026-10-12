@@ -20,6 +20,8 @@ body {
   background: var(--cream);
   color: var(--text);
   line-height: 1.6;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 a {
@@ -30,12 +32,12 @@ a {
 .site-header {
   border-bottom: 1px solid var(--line);
   background: var(--cream);
+  width: 100%;
 }
 
 .nav {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 18px 24px;
+  width: 100%;
+  padding: 18px 5%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -74,10 +76,10 @@ a {
   border-bottom: 2px solid var(--rose);
 }
 
-/* ---------- Page Container ---------- */
+/* ---------- Full-Width Page Container ---------- */
 main {
-  max-width: 1040px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 5%;
 }
 
 h1 {
@@ -105,8 +107,8 @@ h3 {
 /* ---------- Left-Aligned Hero ---------- */
 .hero {
   text-align: left;
-  padding: 60px 24px 40px;
-  max-width: 800px;
+  padding: 60px 0 40px;
+  max-width: 900px;
 }
 
 .label {
@@ -170,17 +172,19 @@ h3 {
 
 /* ---------- Sections & Cards Grid ---------- */
 .section {
-  padding: 32px 24px;
+  padding: 32px 0;
+  width: 100%;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  width: 100%;
 }
 
 .grid.small {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card {
@@ -229,19 +233,20 @@ h3 {
   background: var(--sand);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  padding: 36px 24px;
+  padding: 36px 5%;
   margin: 20px 0;
+  width: 100%;
 }
 
 .glance-container {
-  max-width: 1040px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .glance-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  width: 100%;
 }
 
 .glance-grid div {
@@ -263,8 +268,9 @@ h3 {
 /* ---------- Closing Section ---------- */
 .closing {
   text-align: left;
-  padding: 40px 24px;
+  padding: 40px 0;
   border-top: 1px solid var(--line);
+  width: 100%;
 }
 
 .closing p {
@@ -275,16 +281,16 @@ h3 {
 
 /* ---------- Footer ---------- */
 footer {
-  padding: 24px;
+  padding: 24px 5%;
   font-size: 0.88rem;
   color: var(--muted);
   background: var(--sand);
   border-top: 1px solid var(--line);
+  width: 100%;
 }
 
 .footer-content {
-  max-width: 1040px;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -292,13 +298,25 @@ footer {
   gap: 12px;
 }
 
-/* ---------- Responsive Adjustments ---------- */
+/* ---------- Responsive Grid Adjustments ---------- */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  .grid.small {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .glance-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2rem;
   }
   .hero {
-    padding: 36px 20px 24px;
+    padding: 36px 0 24px;
   }
   .hero-buttons {
     flex-direction: column;
