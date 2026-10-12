@@ -28,7 +28,7 @@ a {
   text-decoration: none;
 }
 
-/* ---------- Header & Navigation ---------- */
+/* ---------- Header Navigation ---------- */
 .site-header {
   border-bottom: 1px solid var(--line);
   background: var(--cream);
@@ -76,7 +76,7 @@ a {
   border-bottom: 2px solid var(--rose);
 }
 
-/* ---------- Full-Width Page Container ---------- */
+/* ---------- Main Page Container ---------- */
 main {
   width: 100%;
   padding: 0 5%;
@@ -104,11 +104,12 @@ h3 {
   margin-bottom: 6px;
 }
 
-/* ---------- Left-Aligned Hero ---------- */
+/* ---------- Centered Hero Section ---------- */
 .hero {
-  text-align: left;
+  text-align: center;
   padding: 60px 0 40px;
-  max-width: 900px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .label {
@@ -136,6 +137,7 @@ h3 {
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
 }
@@ -170,7 +172,7 @@ h3 {
   background: var(--sand);
 }
 
-/* ---------- Sections & Cards Grid ---------- */
+/* ---------- Section Cards ---------- */
 .section {
   padding: 32px 0;
   width: 100%;
@@ -228,14 +230,19 @@ h3 {
   color: var(--muted);
 }
 
-/* ---------- Full-Width At a Glance ---------- */
+/* ---------- Full-Width At a Glance Band ---------- */
 .glance {
   background: var(--sand);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   padding: 36px 5%;
   margin: 20px 0;
-  width: 100%;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .glance-container {
@@ -265,9 +272,9 @@ h3 {
   margin-bottom: 4px;
 }
 
-/* ---------- Closing Section ---------- */
+/* ---------- Centered Closing Section ---------- */
 .closing {
-  text-align: left;
+  text-align: center;
   padding: 40px 0;
   border-top: 1px solid var(--line);
   width: 100%;
@@ -298,7 +305,7 @@ footer {
   gap: 12px;
 }
 
-/* ---------- Responsive Grid Adjustments ---------- */
+/* ---------- Mobile Adjustments ---------- */
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
