@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 1. Home Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
+      <p>A Web Developer passionate about building clean, performant applications.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- 2. About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a developer who loves solving complex problems and turning ideas into modern web applications. 
+        I enjoy working with front-end and back-end technologies to deliver seamless user experiences.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3. Skills Section -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid-container">
+        <div class="card">
+          <h3>HTML & CSS</h3>
+          <p>Semantic markup, responsive layouts, and modern CSS styling.</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, and modern web application logic.</p>
+        </div>
+        <div class="card">
+          <h3>Git & GitHub</h3>
+          <p>Version control, branch management, and collaborative development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid-container">
+        <div class="card">
+          <h3>Project One</h3>
+          <p>A web application built using HTML, CSS, and JavaScript.</p>
+          <a href="#" class="project-link">View Repo &rarr;</a>
+        </div>
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>An interactive dashboard showcasing API integration and data visualization.</p>
+          <a href="#" class="project-link">View Repo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Contact Section -->
+  <section id="contact" class="section bg-alt">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out for collaborations or project inquiries.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
