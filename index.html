@@ -12,7 +12,7 @@
   <header class="site-header">
     <nav class="nav">
       <a class="brand" href="index.html">Your Name</a>
-      <ul>
+      <ul class="nav-links">
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="media.html">Media</a></li>
@@ -23,70 +23,129 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
 
+    <!-- Hero Section -->
     <section class="hero">
-      <p class="label">Aspiring IT professional</p>
-      <h1>Hi, I'm Your Name.</h1>
+      <p class="subtitle">Aspiring IT Professional</p>
+      <h1 class="hero-title">Hi, I'm Your Name.</h1>
       <p class="tagline">From patient care to problem solving.</p>
-      <p class="intro">Welcome to my portfolio. Here you can follow my path from healthcare into Information Technology, see the projects I'm building, and learn how my experience in documentation, teamwork, and attention to detail supports my future in tech.</p>
-      <div class="hero-buttons">
-        <a class="btn btn-solid" href="projects.html">View my projects</a>
-        <a class="btn btn-outline" href="contact.html">Contact me</a>
+      <p class="intro">
+        Welcome to my portfolio. Follow my path from healthcare into Information Technology, explore the technical projects I'm building, and see how my experience in documentation, cross-functional teamwork, and high-precision accuracy supports my future in tech.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="projects.html">View My Projects</a>
+        <a class="btn btn-outline" href="contact.html">Contact Me</a>
       </div>
     </section>
 
-    <section class="section">
-      <h2>What I bring</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Technical foundation</h3>
-          <p>Python, HTML, and CSS through hands-on projects at i.c.stars.</p>
-        </div>
-        <div class="card">
-          <h3>Attention to detail</h3>
-          <p>Accurate, confidential documentation in healthcare.</p>
-        </div>
-        <div class="card">
-          <h3>Teamwork and communication</h3>
-          <p>International teams, in English and German.</p>
-        </div>
-      </div>
-    </section>
+    <!-- Content Split Layout -->
+    <div class="content-split">
 
-    <section class="glance">
-      <div class="glance-container">
-        <h2>At a glance</h2>
-        <div class="glance-grid">
-          <div><span>Currently</span>IT Intern at i.c.stars</div>
-          <div><span>Background</span>Nursing Assistant, Germany</div>
-          <div><span>Tools</span>Python, HTML, CSS, Microsoft Office</div>
-          <div><span>Languages</span>English, German, Balochi</div>
+      <!-- Left Column: Primary Features & Portfolios -->
+      <div class="main-column">
+        
+        <section class="block-section">
+          <h2 class="section-heading">What I Bring</h2>
+          <div class="stack-list">
+            <div class="stack-item">
+              <h3>Technical Foundation</h3>
+              <p>Hands-on development with Python, HTML, CSS, and structured software projects at i.c.stars.</p>
+            </div>
+            <div class="stack-item">
+              <h3>Attention to Detail</h3>
+              <p>Accurate, confidential documentation and strict protocol compliance built through healthcare experience.</p>
+            </div>
+            <div class="stack-item">
+              <h3>Global Teamwork & Communication</h3>
+              <p>Effective collaboration in international environments, fluent in English and German.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block-section">
+          <h2 class="section-heading">Explore My Portfolio</h2>
+          <div class="nav-grid">
+            <a class="nav-card" href="about.html">
+              <div class="nav-card-header">
+                <strong>About</strong>
+                <span class="arrow">→</span>
+              </div>
+              <p>My background, career path, and core values.</p>
+            </a>
+            <a class="nav-card" href="media.html">
+              <div class="nav-card-header">
+                <strong>Media</strong>
+                <span class="arrow">→</span>
+              </div>
+              <p>Photos, travel highlights, and certifications.</p>
+            </a>
+            <a class="nav-card" href="resume.html">
+              <div class="nav-card-header">
+                <strong>Resume</strong>
+                <span class="arrow">→</span>
+              </div>
+              <p>Professional experience, skills, and education.</p>
+            </a>
+            <a class="nav-card" href="projects.html">
+              <div class="nav-card-header">
+                <strong>Projects</strong>
+                <span class="arrow">→</span>
+              </div>
+              <p>Software development, labs, and built applications.</p>
+            </a>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Right Column: Quick Profile Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-box">
+          <h2 class="sidebar-heading">At a Glance</h2>
+          
+          <div class="glance-item">
+            <span class="glance-label">Currently</span>
+            <span class="glance-value">IT Intern at i.c.stars</span>
+          </div>
+
+          <div class="glance-item">
+            <span class="glance-label">Background</span>
+            <span class="glance-value">Nursing Assistant, Germany</span>
+          </div>
+
+          <div class="glance-item">
+            <span class="glance-label">Tools & Tech</span>
+            <span class="glance-value">Python, HTML, CSS, Microsoft Office</span>
+          </div>
+
+          <div class="glance-item">
+            <span class="glance-label">Languages</span>
+            <span class="glance-value">English, German, Balochi</span>
+          </div>
         </div>
-      </div>
-    </section>
+      </aside>
 
-    <section class="section">
-      <h2>Explore my portfolio</h2>
-      <div class="grid small">
-        <a class="card link-card" href="about.html"><strong>About <span>→</span></strong><span>My story and skills</span></a>
-        <a class="card link-card" href="media.html"><strong>Media <span>→</span></strong><span>Photos and certificates</span></a>
-        <a class="card link-card" href="resume.html"><strong>Resume <span>→</span></strong><span>Experience and education</span></a>
-        <a class="card link-card" href="projects.html"><strong>Projects <span>→</span></strong><span>What I've built</span></a>
-      </div>
-    </section>
+    </div>
 
-    <section class="closing">
-      <p>I'm open to IT opportunities and always happy to connect.</p>
-      <a class="btn btn-solid" href="contact.html">Contact me</a>
+    <!-- Closing Callout -->
+    <section class="closing-banner">
+      <h2>Let's Build Together</h2>
+      <p>I am actively seeking IT opportunities and always eager to connect with technical teams.</p>
+      <a class="btn btn-solid" href="contact.html">Get in Touch</a>
     </section>
 
   </main>
 
-  <footer>
-    <div class="footer-content">
-      <span>&copy; 2026 Your Name</span>
-      <span>IT Support & Operations</span>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 
