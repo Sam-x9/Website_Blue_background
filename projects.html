@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal IT portfolio, experience, education and projects">
+
+    <title>Projects | IT Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+    <header class="custom-blue-bg text-white sticky top-0 z-50 border-b border-white/20 shadow-md">
+        <nav class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-wrap items-center justify-between">
+
+            <a href="index.html" class="text-2xl md:text-3xl font-bold tracking-tight">
+                My IT Portfolio
+            </a>
+
+            <button
+                id="mobile-menu-btn"
+                class="md:hidden p-2"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <div
+                id="nav-content"
+                class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center gap-5 mt-4 md:mt-0 text-sm font-serif-custom">
+
+                <a class="nav-link hover:text-white transition-colors py-1" href="index.html">Home</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="about.html">About</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="media.html">Media</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="resume.html">Resume</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="projects.html">Projects</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="contact.html">Contact</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow custom-blue-bg px-6 md:px-12 py-20">
+        <div class="max-w-5xl mx-auto">
+
+            <p class="font-serif-custom text-blue-100 mb-3">
+                MY PORTFOLIO
+            </p>
+
+            <h1 class="text-5xl font-bold mb-5">
+                Projects
+            </h1>
+
+            <p class="font-serif-custom text-xl leading-relaxed mb-14">
+                Selected coursework and hands-on technology projects.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="feature-card">
+
+                    <h2 class="text-xl font-bold">
+                        Community Resource Navigator
+                    </h2>
+
+                    <p>
+                        A student project organizing useful local resources such as food assistance, clinics, and community support.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <h2 class="text-xl font-bold">
+                        Networking Labs
+                    </h2>
+
+                    <p>
+                        Hands-on exercises exploring IPv4, IPv6, DHCP, ARP, and basic routing concepts.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <h2 class="text-xl font-bold">
+                        Portfolio Website
+                    </h2>
+
+                    <p>
+                        A responsive personal website built with HTML, CSS, and JavaScript.
+                    </p>
+
+                </div>
+
+                <div class="feature-card">
+
+                    <h2 class="text-xl font-bold">
+                        Python Practice
+                    </h2>
+
+                    <p>
+                        Introductory programming exercises and problem-solving practice.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer-bg text-white py-14 px-6 text-center">
+
+        <p class="text-2xl font-bold mb-8">
+            My IT Portfolio
+        </p>
+
+        <p class="font-serif-custom italic mb-6">
+            IT Support · Networking · Web Development
+        </p>
+
+        <p class="text-sm">
+            © <span class="year-span">2026</span> My IT Portfolio · Built with HTML, CSS & JavaScript
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
