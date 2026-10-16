@@ -1,81 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  // Mobile navigation menu
-  const mobileBtn = document.getElementById('mobile-menu-btn');
-  const navContent = document.getElementById('nav-content');
+    const b = document.getElementById('mobile-menu-btn');
+    const n = document.getElementById('nav-content');
 
-  if (mobileBtn && navContent) {
-    mobileBtn.addEventListener('click', () => {
-      navContent.classList.toggle('hidden');
-    });
+    if (b && n) {
 
-    // Close the menu after tapping a link on mobile
-    navContent.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth < 768) {
-          navContent.classList.add('hidden');
-        }
-      });
-    });
-  }
+        b.addEventListener('click', () => {
+            const hidden = n.classList.toggle('hidden');
+            b.setAttribute('aria-expanded', String(!hidden));
+        });
 
-  // Quote carousel data
-  const quotes = [
-    {
-      quote: '"Humility is not thinking less of yourself, but thinking of yourself less."',
-      author: 'C.S. Lewis'
-    },
-    {
-      quote: '"The most important thing is to try and inspire people so that they can be great in whatever they want to do."',
-      author: 'Kobe Bryant'
+        n.querySelectorAll('a').forEach(a =>
+            a.addEventListener('click', () => {
+                if (innerWidth < 768) {
+                    n.classList.add('hidden');
+                    b.setAttribute('aria-expanded', 'false');
+                }
+            })
+        );
     }
-    // To add your Joni Mitchell favorite, paste it here:
-    // , { quote: '"YOUR QUOTE HERE"', author: 'Joni Mitchell, Both Sides Now' }
-  ];
 
-  let currentQuoteIndex = 0;
+    const quotes = [
+        {
+            quote: '“The best way to predict the future is to create it.”',
+            author: 'A thought about learning and growth'
+        },
+        {
+            quote: '“Every problem is an opportunity to learn something new.”',
+            author: 'My approach to IT support'
+        },
+        {
+            quote: '“Technology works best when it helps people.”',
+            author: 'My professional philosophy'
+        }
+    ];
 
-  const quoteDisplay = document.getElementById('quote-display');
-  const prevBtn = document.getElementById('prev-quote');
-  const nextBtn = document.getElementById('next-quote');
+    let i = 0;
 
-  function updateQuoteDisplay() {
-    if (!quoteDisplay) return;
+    const display = document.getElementById('quote-display');
 
-    quoteDisplay.style.opacity = '0';
+    function update() {
 
-    setTimeout(() => {
-      const current = quotes[currentQuoteIndex];
+        if (!display) return;
 
-      quoteDisplay.innerHTML = `
-        <blockquote class="text-2xl sm:text-3xl font-extrabold text-blue-700 leading-tight mb-4 tracking-tight"></blockquote>
-        <p class="font-serif-custom text-gray-600 italic text-base md:text-lg"></p>
-      `;
-      quoteDisplay.querySelector('blockquote').textContent = current.quote;
-      quoteDisplay.querySelector('p').textContent = current.author;
+        display.style.opacity = '0';
 
-      quoteDisplay.style.opacity = '1';
-    }, 200);
-  }
+        setTimeout(() => {
+            display.querySelector('blockquote').textContent = quotes[i].quote;
+            display.querySelector('p').textContent = quotes[i].author;
+            display.style.opacity = '1';
+        }, 200);
+    }
 
-  if (prevBtn) {
-    prevBtn.addEventListener('click', () => {
-      currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
-      updateQuoteDisplay();
+    document.getElementById('prev-quote')?.addEventListener('click', () => {
+        i = (i + quotes.length - 1) % quotes.length;
+        update();
     });
-  }
 
-  if (nextBtn) {
-    nextBtn.addEventListener('click', () => {
-      currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
-      updateQuoteDisplay();
+    document.getElementById('next-quote')?.addEventListener('click', () => {
+        i = (i + 1) % quotes.length;
+        update();
     });
-  }
 
-  // Automatically update the copyright year
-  const yearSpan = document.getElementById('year-span');
-  if (yearSpan) {
-    yearSpan.textContent = new Date().getFullYear();
-  }
+    document.querySelectorAll('.year-span').forEach(
+        e => e.textContent = new Date().getFullYear()
+    );
 
 });
