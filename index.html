@@ -1,201 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Personal IT portfolio, experience, education and projects">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspiring IT Professional - Portfolio</title>
 
-    <title>Home | IT Portfolio</title>
-
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serifCustom: ['Georgia', 'Cambria', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b75bb',
+                            darkBlue: '#125387',
+                            lightBlue: '#5499c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col justify-between antialiased">
 
-    <header class="custom-blue-bg text-white sticky top-0 z-50 border-b border-white/20 shadow-md">
-        <nav class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-wrap items-center justify-between">
+    <header class="w-full bg-[#1b75bb] border-b border-white/10 sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+        <nav class="w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-16 py-6 flex flex-wrap items-center justify-between">
 
-            <a href="index.html" class="text-2xl md:text-3xl font-bold tracking-tight">
-                My IT Portfolio
+            <!-- Left Brand Name -->
+            <a href="index.html" class="text-2xl md:text-3xl font-extrabold tracking-tight hover:opacity-90 transition-opacity">
+                Aspiring IT Professional
             </a>
 
+            <!-- Mobile Menu Toggle Button -->
             <button
                 id="mobile-menu-btn"
-                class="md:hidden p-2"
+                class="md:hidden p-2 rounded-lg border border-white/30 text-xl focus:outline-none hover:bg-white/10"
                 aria-label="Toggle navigation"
                 aria-expanded="false">
                 ☰
             </button>
 
+            <!-- Navigation Links -->
             <div
                 id="nav-content"
-                class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center gap-5 mt-4 md:mt-0 text-sm font-serif-custom">
+                class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center gap-5 lg:gap-7 mt-4 md:mt-0 text-base font-medium">
 
-                <a class="nav-link hover:text-white transition-colors py-1" href="index.html">Home</a>
-                <a class="nav-link hover:text-white transition-colors py-1" href="about.html">About</a>
-                <a class="nav-link hover:text-white transition-colors py-1" href="media.html">Media</a>
-                <a class="nav-link hover:text-white transition-colors py-1" href="resume.html">Resume</a>
-                <a class="nav-link hover:text-white transition-colors py-1" href="projects.html">Projects</a>
-                <a class="nav-link hover:text-white transition-colors py-1" href="contact.html">Contact</a>
-
-            </div>
-        </nav>
-    </header>
-
-    <section class="custom-blue-bg px-6 md:px-12 pt-16 pb-24">
-        <div class="max-w-6xl mx-auto">
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center mb-28">
-
-                <div class="md:col-span-4 flex justify-center md:justify-start">
-                    <div
-                        class="arch-image-container portrait-placeholder w-[235px] h-[350px] flex-shrink-0"
-                        title="Add your photo as assets/profile.jpg">
-
-                        <img
-                            src="assets/profile.jpg"
-                            alt="Portfolio portrait"
-                            class="w-full h-full object-cover"
-                            onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-
-                        <span style="display:none">
-                            YOUR<br>PHOTO<br>HERE
-                        </span>
-
-                    </div>
-                </div>
-
-                <div class="md:col-span-8">
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
-                        Information Technology student and aspiring IT Support Specialist, bringing healthcare experience, technical curiosity, and a passion for helping people solve problems.
-                    </h1>
-                </div>
-
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
-
-                <div class="md:col-span-6 flex items-center justify-center gap-8">
-                    <div class="h-px bg-white/70 w-36"></div>
-                    <span class="font-serif-custom font-bold">Intro</span>
-                </div>
-
-                <div class="md:col-span-6">
-                    <p class="font-serif-custom text-lg md:text-xl leading-[2]">
-                        My professional journey began in healthcare in Germany, where I developed patience, communication, teamwork, and attention to detail. I'm now studying Information Technology at Everett Community College and building hands-on skills in troubleshooting, networking, Python, and web development. My goal is to support people with technology and keep learning through real-world projects.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="custom-blue-bg px-6 md:px-12 pb-24">
-        <div class="max-w-6xl mx-auto">
-
-            <h2 class="section-title">Highlights</h2>
-
-            <div class="space-y-5">
-
-                <div class="feature-card">
-                    <p class="text-blue-700 uppercase text-xs font-bold tracking-wider">
-                        Education
-                    </p>
-
-                    <h3 class="text-xl font-bold">
-                        Information Technology — Everett Community College
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Working toward an IT career through technical coursework and practical learning.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <p class="text-blue-700 uppercase text-xs font-bold tracking-wider">
-                        Experience
-                    </p>
-
-                    <h3 class="text-xl font-bold">
-                        Healthcare Background in Germany
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Experience supporting people, communicating clearly, and working in a team.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <p class="text-blue-700 uppercase text-xs font-bold tracking-wider">
-                        Technical Focus
-                    </p>
-
-                    <h3 class="text-xl font-bold">
-                        IT Support, Networking & Python
-                    </h3>
-
-                    <p class="text-gray-600">
-                        Developing skills in Windows troubleshooting, DNS, DHCP, networking labs, and programming.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-white text-blue-900 py-24 px-6">
-        <div class="max-w-6xl mx-auto flex items-center gap-3 md:gap-8">
-
-            <button
-                id="prev-quote"
-                class="rounded-full bg-[#659ac8] text-white h-12 w-12 shrink-0 text-2xl hover:bg-blue-700"
-                aria-label="Previous quote">
-                ←
-            </button>
-
-            <div
-                id="quote-display"
-                class="quote-display text-center flex-1 min-h-[220px] flex flex-col items-center justify-center gap-10">
-
-                <blockquote class="text-2xl sm:text-4xl font-extrabold text-[#1c75bc] leading-tight">
-                    “The best way to predict the future is to create it.”
-                </blockquote>
-
-                <p class="font-serif-custom text-[#1c75bc]">
-                    A thought about learning and growth
-                </p>
-
-            </div>
-
-            <button
-                id="next-quote"
-                class="rounded-full bg-[#659ac8] text-white h-12 w-12 shrink-0 text-2xl hover:bg-blue-700"
-                aria-label="Next quote">
-                →
-            </button>
-
-        </div>
-    </section>
-
-    <footer class="footer-bg text-white py-14 px-6 text-center">
-
-        <p class="text-2xl font-bold mb-8">
-            My IT Portfolio
-        </p>
-
-        <p class="font-serif-custom italic mb-6">
-            IT Support · Networking · Web Development
-        </p>
-
-        <p class="text-sm">
-            © <span class="year-span">2026</span> My IT Portfolio · Built with HTML, CSS & JavaScript
-        </p>
-
-    </footer>
-
-    <script src="script.js"></script>
-
-</body>
-</html>
+                <a class="nav-link py-1" href="#home">Home</a>
+                <a class="nav-link py-1 opacity-90 hover:opacity-100" href="#about">About</a>
+                <a class="nav-link py-1 opacity-90 hover:opacity-100" href="#media">Media</a>
+                <a class="nav-link py-1 opacity-90 hover:opacity-100" href="#projects">Projects</a>
+                <a class="nav-link py-1 opacity-90 hover:opacity-100" href="#resume">Resume</a>
+                <a class="nav-link py-1 opacity-90 hover:opacity-100" href="#contact">Contact</
