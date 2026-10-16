@@ -1,240 +1,201 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kayla Padilla. USC MS Entrepreneurship and Innovation graduate and UPenn alum, passionate about tech, sports, and music.">
-  <title>Kayla Padilla</title>
+<html lang="en">
 
-  <!-- Tailwind CSS and Font Awesome Icons -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal IT portfolio, experience, education and projects">
+
+    <title>Home | IT Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="antialiased min-h-screen flex flex-col">
+<body class="min-h-screen flex flex-col">
 
-  <!-- Site Navigation Header -->
-  <header class="custom-blue-bg text-white sticky top-0 z-50 border-b border-white/20 shadow-md backdrop-blur-md bg-opacity-95">
-    <nav class="max-w-6xl mx-auto px-6 md:px-12 py-5 flex flex-wrap items-center justify-between">
+    <header class="custom-blue-bg text-white sticky top-0 z-50 border-b border-white/20 shadow-md">
+        <nav class="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-wrap items-center justify-between">
 
-      <a href="#top" class="font-serif-custom text-2xl font-bold tracking-tight hover:opacity-90 transition-opacity">
-        Kayla Padilla
-      </a>
+            <a href="index.html" class="text-2xl md:text-3xl font-bold tracking-tight">
+                My IT Portfolio
+            </a>
 
-      <button id="mobile-menu-btn" class="md:hidden text-white p-2 rounded-lg hover:bg-white/10" aria-label="Toggle Navigation">
-        <i class="fa-solid fa-bars text-xl"></i>
-      </button>
+            <button
+                id="mobile-menu-btn"
+                class="md:hidden p-2"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
 
-      <div id="nav-content" class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center gap-6 mt-4 md:mt-0 font-medium text-sm">
+            <div
+                id="nav-content"
+                class="hidden md:flex flex-col md:flex-row w-full md:w-auto items-center gap-5 mt-4 md:mt-0 text-sm font-serif-custom">
 
-        <ul class="flex flex-col md:flex-row items-center gap-6 text-white/90">
-          <li><a href="#top" class="hover:text-white transition-colors py-1">Home</a></li>
-          <li><a href="#about" class="hover:text-white transition-colors py-1">About</a></li>
-          <li><a href="#media" class="hover:text-white transition-colors py-1">Media</a></li>
-          <li><a href="https://kaylapadilla.org/resume" target="_blank" rel="noopener" class="hover:text-white transition-colors py-1">Resume</a></li>
-          <li><a href="https://kaylapadilla.org/projects" target="_blank" rel="noopener" class="hover:text-white transition-colors py-1">Projects</a></li>
-          <li><a href="#contact" class="hover:text-white transition-colors py-1">Contact</a></li>
-        </ul>
+                <a class="nav-link hover:text-white transition-colors py-1" href="index.html">Home</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="about.html">About</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="media.html">Media</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="resume.html">Resume</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="projects.html">Projects</a>
+                <a class="nav-link hover:text-white transition-colors py-1" href="contact.html">Contact</a>
 
-        <!-- Social Links -->
-        <div class="flex items-center gap-4 text-lg text-white/90 pt-3 md:pt-0 border-t border-white/20 md:border-t-0 md:ml-4">
-          <a href="mailto:kaylacpadilla@gmail.com" title="Email" class="hover:text-blue-200">
-            <i class="fa-regular fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/kayla-padilla-448097191/" target="_blank" rel="noopener" title="LinkedIn" class="hover:text-blue-200">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com/kaylacp_/" target="_blank" rel="noopener" title="Twitter" class="hover:text-blue-200">
-            <i class="fa-brands fa-twitter"></i>
-          </a>
-          <a href="https://www.tiktok.com/@kaylacp" target="_blank" rel="noopener" title="TikTok" class="hover:text-blue-200">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="custom-blue-bg px-6 md:px-12 pt-16 pb-24">
+        <div class="max-w-6xl mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center mb-28">
+
+                <div class="md:col-span-4 flex justify-center md:justify-start">
+                    <div
+                        class="arch-image-container portrait-placeholder w-[235px] h-[350px] flex-shrink-0"
+                        title="Add your photo as assets/profile.jpg">
+
+                        <img
+                            src="assets/profile.jpg"
+                            alt="Portfolio portrait"
+                            class="w-full h-full object-cover"
+                            onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+
+                        <span style="display:none">
+                            YOUR<br>PHOTO<br>HERE
+                        </span>
+
+                    </div>
+                </div>
+
+                <div class="md:col-span-8">
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+                        Information Technology student and aspiring IT Support Specialist, bringing healthcare experience, technical curiosity, and a passion for helping people solve problems.
+                    </h1>
+                </div>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start">
+
+                <div class="md:col-span-6 flex items-center justify-center gap-8">
+                    <div class="h-px bg-white/70 w-36"></div>
+                    <span class="font-serif-custom font-bold">Intro</span>
+                </div>
+
+                <div class="md:col-span-6">
+                    <p class="font-serif-custom text-lg md:text-xl leading-[2]">
+                        My professional journey began in healthcare in Germany, where I developed patience, communication, teamwork, and attention to detail. I'm now studying Information Technology at Everett Community College and building hands-on skills in troubleshooting, networking, Python, and web development. My goal is to support people with technology and keep learning through real-world projects.
+                    </p>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Hero Section -->
-  <section id="top" class="custom-blue-bg text-white pt-10 pb-16 px-6 md:px-12 border-b border-white/20">
-    <div class="max-w-6xl mx-auto">
+    <section class="custom-blue-bg px-6 md:px-12 pb-24">
+        <div class="max-w-6xl mx-auto">
 
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center mb-16">
+            <h2 class="section-title">Highlights</h2>
 
-        <div class="md:col-span-4 flex justify-center md:justify-start">
-          <div class="arch-image-container w-[220px] h-[280px] bg-blue-950 relative shadow-2xl border-2 border-white/30 flex-shrink-0">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/62dc43e419bfa717fc15773f/2f600651-b63d-4587-8072-c881bf7939a8/Headshot+2023+2.JPG"
-              alt="Kayla Padilla headshot"
-              class="w-full h-full object-cover"
-              style="object-position: 45% 35%;"
-              onerror="this.src='https://placehold.co/440x560/155d97/ffffff?text=Kayla+Padilla'">
-          </div>
+            <div class="space-y-5">
+
+                <div class="feature-card">
+                    <p class="text-blue-700 uppercase text-xs font-bold tracking-wider">
+                        Education
+                    </p>
+
+                    <h3 class="text-xl font-bold">
+                        Information Technology — Everett Community College
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Working toward an IT career through technical coursework and practical learning.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <p class="text-blue-700 uppercase text-xs font-bold tracking-wider">
+                        Experience
+                    </p>
+
+                    <h3 class="text-xl font-bold">
+                        Healthcare Background in Germany
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Experience supporting people, communicating clearly, and working in a team.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <p class="text-blue-700 uppercase text-xs font-bold tracking-wider">
+                        Technical Focus
+                    </p>
+
+                    <h3 class="text-xl font-bold">
+                        IT Support, Networking & Python
+                    </h3>
+
+                    <p class="text-gray-600">
+                        Developing skills in Windows troubleshooting, DNS, DHCP, networking labs, and programming.
+                    </p>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <div class="md:col-span-8">
-          <h1 class="font-serif-custom text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight tracking-tight text-white">
-            Graduate of USC’s Master of Science in Entrepreneurship and Innovation program and UPenn alum, passionate about a career in tech, sports, and music.
-          </h1>
+    <section class="bg-white text-blue-900 py-24 px-6">
+        <div class="max-w-6xl mx-auto flex items-center gap-3 md:gap-8">
+
+            <button
+                id="prev-quote"
+                class="rounded-full bg-[#659ac8] text-white h-12 w-12 shrink-0 text-2xl hover:bg-blue-700"
+                aria-label="Previous quote">
+                ←
+            </button>
+
+            <div
+                id="quote-display"
+                class="quote-display text-center flex-1 min-h-[220px] flex flex-col items-center justify-center gap-10">
+
+                <blockquote class="text-2xl sm:text-4xl font-extrabold text-[#1c75bc] leading-tight">
+                    “The best way to predict the future is to create it.”
+                </blockquote>
+
+                <p class="font-serif-custom text-[#1c75bc]">
+                    A thought about learning and growth
+                </p>
+
+            </div>
+
+            <button
+                id="next-quote"
+                class="rounded-full bg-[#659ac8] text-white h-12 w-12 shrink-0 text-2xl hover:bg-blue-700"
+                aria-label="Next quote">
+                →
+            </button>
+
         </div>
-      </div>
+    </section>
 
-      <!-- Intro -->
-      <div id="about" class="grid grid-cols-1 md:grid-cols-12 gap-6 items-start pt-8 border-t border-white/20">
+    <footer class="footer-bg text-white py-14 px-6 text-center">
 
-        <div class="md:col-span-3 flex items-center gap-4">
-          <div class="h-px bg-white/50 w-16 hidden sm:block"></div>
-          <span class="text-sm font-bold tracking-widest uppercase text-blue-100">Intro</span>
-        </div>
+        <p class="text-2xl font-bold mb-8">
+            My IT Portfolio
+        </p>
 
-        <div class="md:col-span-9">
-          <p class="font-serif-custom text-base md:text-lg leading-relaxed text-blue-50 font-light">
-            I was born and raised in Southern California where I grew up in a Lakers town and always had good music playing around the house. These threads of family, basketball, and music have defined my life path and experiences. I received a Master of Science in Entrepreneurship and Innovation degree from the University of Southern California’s Marshall School of Business in tandem with being the starting point guard of the 2023-2024 Elite 8 and PAC-12 Championship Trojans Women’s Basketball Team. This follows the completion of my undergraduate degree at the University of Pennsylvania where I earned a Bachelor of Science in Economics with concentrations in Finance and Management from the Wharton School of Business. At Penn, I was also a four-year member on the Quakers Women’s Basketball Team and two-time captain.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+        <p class="font-serif-custom italic mb-6">
+            IT Support · Networking · Web Development
+        </p>
 
-  <!-- Main Content -->
-  <main class="flex-grow custom-blue-bg py-16 px-6 md:px-12">
-    <div class="max-w-6xl mx-auto">
+        <p class="text-sm">
+            © <span class="year-span">2026</span> My IT Portfolio · Built with HTML, CSS & JavaScript
+        </p>
 
-      <!-- Highlights -->
-      <section class="mb-16">
-        <h2 class="font-serif-custom text-2xl md:text-3xl font-bold text-white mb-6 pb-3 border-b border-white/20">
-          Highlights
-        </h2>
+    </footer>
 
-        <div class="space-y-4">
-          <div class="bg-white text-gray-900 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
-            <span class="info-label">University of Southern California</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">M.S. in Entrepreneurship and Innovation</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Marshall School of Business, completed alongside playing for the Trojans Women’s Basketball Team.
-            </p>
-          </div>
-
-          <div class="bg-white text-gray-900 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
-            <span class="info-label">University of Pennsylvania</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">B.S. in Economics</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Wharton School, with concentrations in Finance and Management.
-            </p>
-          </div>
-
-          <div class="bg-white text-gray-900 p-6 rounded-lg shadow-md border-l-4 border-blue-600">
-            <span class="info-label">Athletics</span>
-            <h3 class="text-lg font-bold text-gray-900 mb-1">Division I Point Guard</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Starting point guard for the 2023-2024 Elite 8 and PAC-12 Championship USC team. Four-year member and two-time captain at Penn.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Media -->
-      <section id="media" class="mb-16">
-        <h2 class="font-serif-custom text-2xl md:text-3xl font-bold text-white mb-6 pb-3 border-b border-white/20">
-          Media
-        </h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/62dc43e419bfa717fc15773f/f0ab6e40-08ab-47e0-acd5-89bec98cb901/usc+pac+12+champ.jpg?format=1500w"
-            alt="USC Women's Basketball PAC-12 Championship"
-            loading="lazy"
-            class="media-photo">
-          <img
-            src="https://images.squarespace-cdn.com/content/v1/62dc43e419bfa717fc15773f/0aacb679-8b19-4c4b-a8b5-cc72031048bf/kayla-padilla-leaning-2.jpeg?format=1500w"
-            alt="Kayla Padilla"
-            loading="lazy"
-            class="media-photo">
-        </div>
-      </section>
-
-      <!-- Music -->
-      <section>
-        <h2 class="font-serif-custom text-2xl md:text-3xl font-bold text-white mb-6 pb-3 border-b border-white/20">
-          Current Song on Repeat
-        </h2>
-
-        <div class="max-w-2xl mx-auto video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/khnokW3Mw24"
-            title="Instant Crush (feat. Julian Casablancas)"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy"></iframe>
-        </div>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- Quote Carousel -->
-  <section class="bg-white text-blue-900 py-16 px-6 md:px-12 border-b border-blue-100">
-    <div class="max-w-4xl mx-auto relative px-12">
-
-      <div class="text-center min-h-[160px] flex flex-col justify-center items-center">
-        <div id="quote-display" class="transition-opacity duration-300">
-          <blockquote class="text-2xl sm:text-3xl font-extrabold text-blue-700 leading-tight mb-4 tracking-tight">
-            "Humility is not thinking less of yourself, but thinking of yourself less."
-          </blockquote>
-          <p class="font-serif-custom text-gray-600 italic text-base md:text-lg">
-            C.S. Lewis
-          </p>
-        </div>
-      </div>
-
-      <button id="prev-quote" class="absolute left-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-lg transition-all" aria-label="Previous Quote">
-        <i class="fa-solid fa-arrow-left text-sm"></i>
-      </button>
-
-      <button id="next-quote" class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-lg transition-all" aria-label="Next Quote">
-        <i class="fa-solid fa-arrow-right text-sm"></i>
-      </button>
-
-    </div>
-  </section>
-
-  <!-- Callout -->
-  <section class="bg-blue-900/40 text-white py-16 px-6 md:px-12 border-t border-b border-white/20 text-center">
-    <div class="max-w-3xl mx-auto space-y-4">
-      <h2 class="font-serif-custom text-3xl md:text-4xl font-bold tracking-tight">
-        Let's Connect
-      </h2>
-      <p class="text-blue-100 text-base md:text-lg max-w-xl mx-auto leading-relaxed font-light">
-        Interested in tech, sports, or music? I'd love to hear from you.
-      </p>
-      <div class="pt-4">
-        <a href="mailto:kaylacpadilla@gmail.com" class="inline-block bg-white text-blue-900 hover:bg-blue-50 font-bold px-8 py-3.5 rounded-lg shadow-lg hover:shadow-xl transition-all">
-          Get in Touch
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="contact" class="bg-blue-950 text-blue-200 py-10 px-6 md:px-12 border-t border-white/10">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm">
-
-      <p>&copy; <span id="year-span">2026</span> Kayla Padilla. All rights reserved.</p>
-
-      <div class="flex items-center gap-6 font-medium">
-        <a href="https://www.linkedin.com/in/kayla-padilla-448097191/" target="_blank" rel="noopener" class="hover:text-white">LinkedIn</a>
-        <a href="https://twitter.com/kaylacp_/" target="_blank" rel="noopener" class="hover:text-white">Twitter</a>
-        <a href="https://www.tiktok.com/@kaylacp" target="_blank" rel="noopener" class="hover:text-white">TikTok</a>
-        <a href="mailto:kaylacpadilla@gmail.com" class="hover:text-white">Email</a>
-      </div>
-
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
